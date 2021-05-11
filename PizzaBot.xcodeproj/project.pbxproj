@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F56C031264A0B3800034B62 /* PizzaBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEF17852648CBC6009A81AE /* PizzaBot.swift */; };
+		4F56C034264A0B3C00034B62 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEF177D2648CBA7009A81AE /* main.swift */; };
 		4FEF177E2648CBA7009A81AE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEF177D2648CBA7009A81AE /* main.swift */; };
+		4FEF17862648CBC6009A81AE /* PizzaBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEF17852648CBC6009A81AE /* PizzaBot.swift */; };
+		4FEF17AE264A0A01009A81AE /* PizzaBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEF17AD264A0A01009A81AE /* PizzaBotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,23 @@
 /* Begin PBXFileReference section */
 		4FEF177A2648CBA7009A81AE /* PizzaBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PizzaBot; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEF177D2648CBA7009A81AE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4FEF17852648CBC6009A81AE /* PizzaBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaBot.swift; sourceTree = "<group>"; };
+		4FEF178E264A0354009A81AE /* PizzaBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaBotTests.swift; sourceTree = "<group>"; };
+		4FEF1790264A0354009A81AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEF17AB264A0A01009A81AE /* PizzaBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEF17AD264A0A01009A81AE /* PizzaBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaBotTests.swift; sourceTree = "<group>"; };
+		4FEF17AF264A0A01009A81AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4FEF17772648CBA7009A81AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEF17A8264A0A01009A81AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				4FEF177C2648CBA7009A81AE /* PizzaBot */,
+				4FEF178D264A0354009A81AE /* PizzaBotTests */,
+				4FEF17AC264A0A01009A81AE /* PizzaBotTests */,
 				4FEF177B2648CBA7009A81AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEF177A2648CBA7009A81AE /* PizzaBot */,
+				4FEF17AB264A0A01009A81AE /* PizzaBotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +78,27 @@
 			isa = PBXGroup;
 			children = (
 				4FEF177D2648CBA7009A81AE /* main.swift */,
+				4FEF17852648CBC6009A81AE /* PizzaBot.swift */,
 			);
 			path = PizzaBot;
+			sourceTree = "<group>";
+		};
+		4FEF178D264A0354009A81AE /* PizzaBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FEF178E264A0354009A81AE /* PizzaBotTests.swift */,
+				4FEF1790264A0354009A81AE /* Info.plist */,
+			);
+			path = PizzaBotTests;
+			sourceTree = "<group>";
+		};
+		4FEF17AC264A0A01009A81AE /* PizzaBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FEF17AD264A0A01009A81AE /* PizzaBotTests.swift */,
+				4FEF17AF264A0A01009A81AE /* Info.plist */,
+			);
+			path = PizzaBotTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +121,23 @@
 			productReference = 4FEF177A2648CBA7009A81AE /* PizzaBot */;
 			productType = "com.apple.product-type.tool";
 		};
+		4FEF17AA264A0A01009A81AE /* PizzaBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FEF17B0264A0A01009A81AE /* Build configuration list for PBXNativeTarget "PizzaBotTests" */;
+			buildPhases = (
+				4FEF17A7264A0A01009A81AE /* Sources */,
+				4FEF17A8264A0A01009A81AE /* Frameworks */,
+				4FEF17A9264A0A01009A81AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzaBotTests;
+			productName = PizzaBotTests;
+			productReference = 4FEF17AB264A0A01009A81AE /* PizzaBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +148,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					4FEF17792648CBA7009A81AE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4FEF17AA264A0A01009A81AE = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -110,16 +169,38 @@
 			projectRoot = "";
 			targets = (
 				4FEF17792648CBA7009A81AE /* PizzaBot */,
+				4FEF17AA264A0A01009A81AE /* PizzaBotTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FEF17A9264A0A01009A81AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FEF17762648CBA7009A81AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FEF17862648CBC6009A81AE /* PizzaBot.swift in Sources */,
 				4FEF177E2648CBA7009A81AE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEF17A7264A0A01009A81AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F56C031264A0B3800034B62 /* PizzaBot.swift in Sources */,
+				4FEF17AE264A0A01009A81AE /* PizzaBotTests.swift in Sources */,
+				4F56C034264A0B3C00034B62 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -254,6 +336,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4FEF17B1264A0A01009A81AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PizzaBotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ignacio.PizzaBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4FEF17B2264A0A01009A81AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PizzaBotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ignacio.PizzaBotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -276,6 +393,15 @@
 			buildConfigurations = (
 				4FEF17822648CBA7009A81AE /* Debug */,
 				4FEF17832648CBA7009A81AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FEF17B0264A0A01009A81AE /* Build configuration list for PBXNativeTarget "PizzaBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEF17B1264A0A01009A81AE /* Debug */,
+				4FEF17B2264A0A01009A81AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
