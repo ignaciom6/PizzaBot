@@ -10,7 +10,9 @@ Clone or download the project from the GIT repository and open PizzaBot.xcodepr
 
 In `main.swift` class, change `input` value in order to get the path printed on console.
 
-User will get an error in case the format is not correct or the coordinates are out of the grid bounds.
+The user will get an error in case the format is not correct or the coordinates are out of the grid bounds.
+
+The user can also run the tests changing the target to PizzaBotTests and running it from `PizzaBotTests.swift` class.
 
 ### Prerequisites
 
